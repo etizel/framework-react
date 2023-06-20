@@ -1,5 +1,7 @@
-import Home from '@/app/page';
-export default function Circle(props: any) {
+interface CircleProps {
+  texto: string;
+}
+export default function Circle(props: CircleProps) {
   return (
     <div
       className={`
