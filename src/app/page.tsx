@@ -4,7 +4,7 @@ export default function EventsComponents() {
   return (
     <div
       className={`
-    flex flex-wrap gap-5 
+    flex flex-wrap gap-5 justify-center items-center 
     `}
     >
       <Events />
