@@ -1,12 +1,15 @@
-import Circle from '@/components/basics/Circle';
+import Events from '@/components/basics/Events';
 
-export default function Home() {
+export default function EventsComponents() {
   return (
-    <div className="flex h-screen justify-between items-center">
-      <Circle texto="Circle #1" />
-      <Circle texto="Circle #2" />
-      <Circle texto="Circle #3" />
-      <Circle texto="Circle #4" quaseQuadrada={true} />
+    <div
+      className={`
+    flex justify-between
+    `}
+    >
+      <Events />
+      <Events />
+      <Events />
     </div>
   );
 }
