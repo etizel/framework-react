@@ -3,7 +3,7 @@ export default function Events() {
     <button
       className={`
     h-72 w-72 bg-amber-500
-  `}
+    `}
     >
       Events
     </button>
