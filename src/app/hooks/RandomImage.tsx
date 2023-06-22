@@ -1,3 +1,7 @@
 export default function RandomImage() {
-  return <div>RandomImage</div>;
+  function renderBtn() {
+    return <button>Teste</button>;
+  }
+
+  return <div>{renderBtn()}</div>;
 }
