@@ -6,7 +6,6 @@ export default function PageCircle() {
       <Circle />
       <Circle />
       <Circle />
-      <Circle />
     </div>
   );
 }
