@@ -1,16 +1,22 @@
 'use client';
 export default function RandomImage() {
   const url = 'https://source.unsplash.com/featured/300x300?';
+  var pesquisa: string = '';
+
+  function finalUrl() {
+    return `${url}${pesquisa}`;
+  }
 
   function RandomBtn(value: string) {
-    let pesquisa: string = '';
-
     return (
       <button
         className={`
         bg-pink-500 px-4 py-2 rounded-md
       `}
-        onClick={() => (pesquisa = value)}
+        onClick={() => {
+          pesquisa = value;
+          console.log(pesquisa);
+        }}
       >
         {value}
       </button>
