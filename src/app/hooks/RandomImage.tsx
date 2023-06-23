@@ -15,7 +15,7 @@ export default function RandomImage() {
       `}
         onClick={() => {
           pesquisa = value;
-          console.log(pesquisa);
+          console.log(finalUrl());
         }}
       >
         {value}
@@ -24,10 +24,10 @@ export default function RandomImage() {
   }
 
   return (
-    <div className="flex flex-col gap-3">
-      {RandomBtn('person')}
-      {RandomBtn('city')}
+    <div className="flex flex-col gap-3 border border-zinc-500 p-7 rounded-md">
       {RandomBtn('abstract')}
+      {RandomBtn('city')}
+      {RandomBtn('person')}
     </div>
   );
 }
