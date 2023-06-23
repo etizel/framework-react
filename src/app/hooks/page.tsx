@@ -1,4 +1,4 @@
-import RandomImage from '../components/hooks/RandomImage';
+import RandomImage from './RandomImage';
 
 export default function ImagePage() {
   return (
