@@ -18,7 +18,7 @@ export default function RandomImage() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col gap-3">
       {RandomBtn('person')}
       {RandomBtn('city')}
       {RandomBtn('abstract')}
