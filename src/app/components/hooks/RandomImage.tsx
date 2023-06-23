@@ -3,7 +3,7 @@ export default function RandomImage() {
     return (
       <button
         className={`
-        bg-pink-500 gap-5
+        bg-pink-500 px-4 py-2 rounded-md
       `}
       >
         teste
@@ -11,11 +11,5 @@ export default function RandomImage() {
     );
   }
 
-  return (
-    <div>
-      {RandomBtn()}
-      {RandomBtn()}
-      {RandomBtn()}
-    </div>
-  );
+  return <div>{RandomBtn()}</div>;
 }

@@ -8,6 +8,8 @@ export default function ImagePage() {
     `}
     >
       <RandomImage />
+      <RandomImage />
+      <RandomImage />
     </div>
   );
 }
