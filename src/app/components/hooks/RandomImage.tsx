@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 export default function RandomImage() {
-  const url = 'https://source.unsplash.com/featured/300x300?';
+  const url = 'https://source.unsplash.com/featured/400x400?';
   var pesquisa: string = '';
 
   function finalUrl() {
@@ -26,8 +26,8 @@ export default function RandomImage() {
 
   return (
     <div className="flex flex-col gap-3 border border-zinc-500 p-7 rounded-md">
-      <Image src={finalUrl()} height={300} width={300} alt="Imagem" />
-      <div className="flex gap-5">
+      <Image src={finalUrl()} height={400} width={400} alt="Imagem" />
+      <div className="flex justify-between gap-5 ">
         {RandomBtn('abstract')}
         {RandomBtn('city')}
         {RandomBtn('person')}
