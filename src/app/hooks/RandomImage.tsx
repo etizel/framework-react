@@ -25,9 +25,11 @@ export default function RandomImage() {
 
   return (
     <div className="flex flex-col gap-3 border border-zinc-500 p-7 rounded-md">
-      {RandomBtn('abstract')}
-      {RandomBtn('city')}
-      {RandomBtn('person')}
+      <div className="flex gap-5">
+        {RandomBtn('abstract')}
+        {RandomBtn('city')}
+        {RandomBtn('person')}
+      </div>
     </div>
   );
 }
