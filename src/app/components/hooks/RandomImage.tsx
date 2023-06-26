@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import { useState } from 'react';
 export default function RandomImage() {
   const url = 'https://source.unsplash.com/featured/400x400?';
   var pesquisa: string = '';
@@ -9,6 +10,8 @@ export default function RandomImage() {
   }
 
   function RandomBtn(value: string) {
+    const [pesquisa, alterarPesquisa] = useState<string>('abstract');
+
     return (
       <button
         className={`
