@@ -2,24 +2,22 @@
 import Image from 'next/image';
 import { useState } from 'react';
 export default function RandomImage() {
+  const [pesquisa, alterarPesquisa] = useState<string>('abstract');
   const url = 'https://source.unsplash.com/featured/400x400?';
-  var pesquisa: string = '';
 
   function finalUrl() {
     return `${url}${pesquisa}`;
   }
 
   function RandomBtn(value: string) {
-    const [pesquisa, alterarPesquisa] = useState<string>('abstract');
-
     return (
       <button
         className={`
         bg-pink-500 px-4 py-2 rounded-md
       `}
         onClick={() => {
-          pesquisa = value;
-          console.log(finalUrl());
+          alterarPesquisa(value);
+          console.log(value);
         }}
       >
         {value}
