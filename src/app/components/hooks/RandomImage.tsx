@@ -40,7 +40,11 @@ export default function RandomImage() {
         {RandomBtn('person')}
       </div>
       <div>
-        <input type="number" value={tamanho} />
+        <input
+          type="number"
+          value={tamanho}
+          className="bg-zinc-800 p-2 rounded-md"
+        />
       </div>
     </div>
   );
