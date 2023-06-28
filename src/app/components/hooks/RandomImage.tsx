@@ -39,6 +39,9 @@ export default function RandomImage() {
         {RandomBtn('city')}
         {RandomBtn('person')}
       </div>
+      <div>
+        <input type="number" value={tamanho} />
+      </div>
     </div>
   );
 }
