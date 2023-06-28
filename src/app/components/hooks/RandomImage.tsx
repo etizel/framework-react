@@ -43,7 +43,10 @@ export default function RandomImage() {
         <input
           type="number"
           value={tamanho}
-          className="bg-zinc-800 p-2 rounded-md"
+          className="bg-zinc-800 p-2 rounded-md outline-none"
+          onChange={(e) => {
+            console.log(alterarTamanho(EventTarget));
+          }}
         />
       </div>
     </div>
