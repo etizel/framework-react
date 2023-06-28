@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 export default function RandomImage() {
   const [pesquisa, alterarPesquisa] = useState<string>('abstract');
-  // const [tamanho, alterarTamanho] = useState<number>(300);
-  const url = 'https://source.unsplash.com/featured/400x400?';
+  const [tamanho, alterarTamanho] = useState<number>(400);
+  const url = 'https://source.unsplash.com/featured/';
 
   function finalUrl() {
     return `${url}${pesquisa}`;
@@ -28,7 +28,12 @@ export default function RandomImage() {
 
   return (
     <div className="flex flex-col gap-3 border border-zinc-500 p-7 rounded-md">
-      <Image src={`${url}${pesquisa}`} height={400} width={400} alt="Imagem" />
+      <Image
+        src={`${url}${tamanho}x${tamanho}?${pesquisa}`}
+        height={400}
+        width={400}
+        alt="Imagem"
+      />
       <div className="flex justify-between gap-5 ">
         {RandomBtn('abstract')}
         {RandomBtn('city')}
