@@ -33,6 +33,7 @@ export default function RandomImage() {
         height={400}
         width={400}
         alt="Imagem"
+        className="rounded-md"
       />
       <div className="flex justify-between gap-5 ">
         {RandomBtn('abstract')}
@@ -43,9 +44,9 @@ export default function RandomImage() {
         <input
           type="number"
           value={tamanho}
-          className="bg-zinc-800 p-2 rounded-md outline-none"
+          className="bg-zinc-800 p-2 rounded-md outline-none w-full"
           onChange={(e) => {
-            console.log(alterarTamanho(EventTarget));
+            console.log(alterarTamanho(+e.target.value));
           }}
         />
       </div>
