@@ -13,7 +13,8 @@ export default function Avo(props: AvoProps) {
     bg-purple-500 border border-white rounded-md
     `}
     >
-      <div className="flex justify-center gap-2">
+      <div className="flex justify-center gap-2 text-2xl">
+        <span className="font-bold">Avô</span>
         <span>{props.nome}</span>
         <span>{props.sobrenome}</span>
       </div>
