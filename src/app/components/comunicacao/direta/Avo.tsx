@@ -19,9 +19,9 @@ export default function Avo(props: AvoProps) {
         <span>{props.sobrenome}</span>
       </div>
       <div className="flex gap-5">
-        <Pai />
-        <Pai />
-        <Pai />
+        <Pai nome="Lesly" sobrenome={props.sobrenome} />
+        <Pai nome="Sidney" sobrenome={props.sobrenome} />
+        <Pai nome="Aatrox" sobrenome={props.sobrenome} />
       </div>
     </div>
   );
