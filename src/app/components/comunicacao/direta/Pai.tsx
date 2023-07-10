@@ -1,6 +1,11 @@
 import Filho from './Filho';
 
-export default function Pai() {
+interface PaiProps {
+  nome: string;
+  sobrenome: string;
+}
+
+export default function Pai(props: PaiProps) {
   return (
     <div
       className={`
@@ -9,8 +14,15 @@ export default function Pai() {
     rounded-md p-5
     `}
     >
-      <Filho />
-      <Filho />
+      <div className="flex justify-center gap-2 text-xl">
+        <span className="font-bold">Pai</span>
+        <span>{props.nome}</span>
+        <span>{props.sobrenome}</span>
+      </div>
+      <div className="flex gap-5">
+        <Filho />
+        <Filho />
+      </div>
     </div>
   );
 }
