@@ -9,8 +9,8 @@ export default function Pai(props: PaiProps) {
   return (
     <div
       className={`
-    flex gap-5
-    bg-pink-400 text-purple-500 border border-white
+    flex flex-col gap-5
+    bg-pink-400 text-black-500 border border-white
     rounded-md p-5
     `}
     >
@@ -20,8 +20,8 @@ export default function Pai(props: PaiProps) {
         <span>{props.sobrenome}</span>
       </div>
       <div className="flex gap-5">
-        <Filho />
-        <Filho />
+        <Filho nome="Tranks" sobrenome={props.sobrenome} />
+        <Filho nome="Pan" sobrenome={props.sobrenome} />
       </div>
     </div>
   );
