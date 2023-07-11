@@ -1,4 +1,4 @@
-import Avo from '../components/comunicacao/direta/Avo';
+import Avo from '../../components/comunicacao/direta/Avo';
 
 export default function PageStright() {
   return (
